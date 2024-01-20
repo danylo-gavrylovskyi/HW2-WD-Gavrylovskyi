@@ -1,0 +1,41 @@
+{
+    "API Documentation": {
+      "/html1": {
+        "method": "GET",
+        "description": "Returns html page 1.",
+        "parameters": {}
+      },
+      "/html2": {
+        "method": "GET",
+        "description": "Returns html page 2.",
+        "parameters": {}
+      },
+      "/file/:filename": {
+        "method": "GET",
+        "description": "Returns requested file (file_example.mp3, cat.jpg, chemistry.png).",
+        "parameters": {
+          "filename": "Name of the file to get (with extension)"
+        }
+      },
+      "/objects/:type/:id": {
+        "method": "GET",
+        "description": "Returns object with requested type and id.",
+        "parameters": {
+          "type": "The type of object (ducks, geese, hens)",
+          "id": "Object id (0, 1)"
+        }
+      },
+      "/objects/:type": {
+        "method": "GET",
+        "description": "Returns objects of requested type.",
+        "parameters": {
+          "type": "The type of object (ducks, geese, hens)"
+        }
+      },
+      "/objects": {
+        "method": "GET",
+        "description": "Returns all objects.",
+        "parameters": {}
+      }
+    }
+  }
